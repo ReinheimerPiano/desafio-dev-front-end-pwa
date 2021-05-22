@@ -1,6 +1,9 @@
 <template>
-  <div class="home">
-  </div>
+  <v-container
+    class="py-8 px-6"
+    fluid
+  >
+  </v-container>
 </template>
 
 <script>
