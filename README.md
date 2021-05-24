@@ -17,6 +17,7 @@
 - Uso de LocalStorage
 
 ![](/public/img/screenshot1.png)
+
 ![](/public/img/screenshot2.png)
 
 ## Instalação
