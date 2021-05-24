@@ -1,7 +1,6 @@
 import Vue from 'vue';
 import Vuetify from 'vuetify/lib/framework';
 import pt from 'vuetify/lib/locale/pt';
-import IconCanaltech from '@/components/IconCanaltech.vue';
 
 Vue.use(Vuetify);
 
@@ -20,16 +19,7 @@ export default new Vuetify({
         info: '#2196F3',
         success: '#4CAF50',
         warning: '#F63D6A',
-      },
-    },
-  },
-  icons: {
-    values: {
-      iconCanaltech: {
-        component: IconCanaltech,
-        props: {
-          name: 'iconCanaltech',
-        },
+        background: '#FFFFFF',
       },
     },
   },

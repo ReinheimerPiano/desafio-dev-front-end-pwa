@@ -1,6 +1,7 @@
 <template>
   <div v-if="$_model" class="div-menu-list">
     <div class="container-list-icons d-flex align-center">
+
     <v-slide-group
       multiple
     >
@@ -9,18 +10,24 @@
         :key='index'
         v-slot="{ active, toggle }"
       >
-        <v-card elevation="0">
+
+        <v-card elevation="0" class="card-menu">
+
           <v-btn
             icon
             outlined
             x-large
+            :to="menu.url"
             @click="toggle"
             :input-value="active"
             class="btn-icon d-flex align-center justify-center pa-3 mx-2"
             v-html='menu.icone'>
           </v-btn>
+
           <span class="title-item">{{menu.titulo}}</span>
+
         </v-card>
+
       </v-slide-item>
     </v-slide-group>
 
@@ -74,6 +81,10 @@ $list-item-icon-margin: 0px;
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.card-menu:first-child{
+  margin-left: 0.8rem;
 }
 
 .item-icon {

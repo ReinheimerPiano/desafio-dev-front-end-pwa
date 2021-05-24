@@ -6,10 +6,12 @@
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
     aria-label="Canaltech"
-    >
+  >
+
     <title>
       Canaltech
     </title>
+
     <path
       v-if="$_model"
       class="color1"
@@ -98,8 +100,10 @@
       class="color3"
       points="10.87 13.88 20.5 13.88 20.5 24.75 16.88 21.12 10.87 21.12 10.87 13.88">
     </polygon>
+
   </svg>
 </template>
+
 <script>
 export default {
   name: 'IconCanalTech',

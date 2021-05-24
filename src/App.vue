@@ -1,12 +1,16 @@
 <template>
   <v-app id="app">
+    <!-- Barra de aplicativo para breackpoint mobile -->
     <app-bar v-model="$vuetify.breakpoint.mobile" />
+    <!-- Menu em icones e titulo para breackpoint mobile -->
     <menu-list-icons v-model="$vuetify.breakpoint.mobile" />
+    <!-- Menu de navegação para breackpoint maior que mobile -->
     <navigation-drawer v-model="$vuetify.breakpoint.mobile" />
-
+    <!-- Main para rederizacao das rotas -->
     <v-main class="pa-0">
       <router-view />
     </v-main>
+
   </v-app>
 </template>
 
@@ -23,10 +27,6 @@ export default {
     AppBar,
     MenuListIcons,
   },
-  data() {
-    return {
-    };
-  },
   created() {
     this.fetchData();
   },
@@ -42,27 +42,17 @@ export default {
 $body-font-family: 'Open Sans';
 $title-font: 'Open Sans';
 
+  // Uso de contantes de tema do vuetify são declarados desta forma var(--v-primary-base)
 #app {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: var(--v-primary-base);
+  background-color: var(--v-background-base)
 }
 
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #222;
-
-    &.router-link-exact-active {
-      color: #27a9e1;
-    }
-  }
-}
-
+// Para efeito de houver em imagens com essas classes
 .img-emphasis{
   width: 100%;
   height: 100%;

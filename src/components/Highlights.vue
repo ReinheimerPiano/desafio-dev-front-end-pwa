@@ -1,25 +1,32 @@
 <template>
   <div class="high-lights-container my-5 px-2">
     <div class="high-lights-scroll">
+
       <v-card
         v-for="(hl, index) in allDestaque"
         :key="index"
         :aria-label="(hl.olho + ' - ' + hl.titulo)"
         :to="hl.url"
-        class="card-high-light mr-3 emphasis rounded-lg">
+        class="card-high-light mr-3 emphasis rounded-lg"
+      >
+
         <v-img
           :src="hl.imagem"
           gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.6)"
           class="img-emphasis grey darken-4 img-card rounded-lg align-end"
         >
+
           <v-card-subtitle class="eye-card pb-0 white--text text-uppercase">
             {{hl.olho}}
           </v-card-subtitle>
           <v-card-title class="title-card pt-2 mb-2 white--text">
             {{hl.titulo}}
           </v-card-title>
+
         </v-img>
+
       </v-card>
+
     </div>
   </div>
 </template>
@@ -139,12 +146,12 @@ $breakpoint: 600px;
 }
 
 ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-    background: transparent;
+  width: 0;
+  height: 0;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-    height: 0px;
+  height: 0px;
 }
 </style>

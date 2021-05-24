@@ -1,8 +1,5 @@
-/* eslint-disable no-useless-escape */
-/* eslint-disable quotes */
-/* eslint-disable quote-props */
-/* eslint-disable no-shadow */
 /* eslint-disable no-return-assign */
+/* eslint-disable no-shadow */
 import axios from 'axios';
 
 const setLocalStorage = (data) => {
@@ -20,7 +17,8 @@ const returnLocalStorage = () => {
   const resp = JSON.parse(respJson);
   return resp;
 };
-
+//  Correção de erros em títulos e tamanho de svg, como são
+//  inseridos com v-html, fica mehor fazer esta alteração aqui
 const fixMenu = async (menu) => {
   const index = menu.length - 1;
   const m = menu;
@@ -59,6 +57,7 @@ const getters = {
   allNoticias: (state) => state.noticias,
   allMenu: (state) => state.menu,
 };
+
 const actions = {
   async fetchData({ commit }) {
     let result = {};

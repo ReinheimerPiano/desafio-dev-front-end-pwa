@@ -8,14 +8,19 @@
     mini-variant
     mini-variant-width='60px'
     aria-label="Menu Principal"
-    class="navigation-drawer">
+    class="navigation-drawer"
+  >
+    <!-- Logo CanalTech -->
     <router-link to="/">
       <v-btn icon x-large class="mt-2 pa-0">
         <icon-canaltech v-model="$_model"/>
       </v-btn>
     </router-link>
+
+    <!-- Itens do Navigation Drawer -->
     <v-list dense class="pt-0">
       <v-list-item v-for='(menu, index) in allMenus' :key='index'>
+
         <v-btn icon large :to="menu.url" class="justify-center">
           <v-list-item-icon
             class='list-item-icon ma-auto'
@@ -25,11 +30,14 @@
             aria-hidden="false">
           </v-list-item-icon>
         </v-btn>
+
         <v-list-item-content>
           {{ menu.titulo }}
         </v-list-item-content>
+
       </v-list-item>
     </v-list>
+
   </v-navigation-drawer>
 </template>
 

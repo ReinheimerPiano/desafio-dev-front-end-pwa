@@ -1,22 +1,30 @@
 <template>
   <div heigth="100%" class="div-home">
+    <!-- Secão Destaques -->
     <highlights />
-    <list-products />
-    <list-videos v-model="$vuetify.breakpoint.mobile" />
+    <!-- Secão Produtos -->
+    <products-list />
+    <!-- Secão Vídeos para breakpoint mobile -->
+    <videos-list v-model="$vuetify.breakpoint.mobile" />
+    <!-- Secão Notícias -->
+    <news-list />
+
   </div>
 </template>
 
 <script>
 import Highlights from '@/components/Highlights.vue';
-import ListProducts from '@/components/ListProducts.vue';
-import ListVideos from '@/components/ListVideos.vue';
+import ProductsList from '@/components/ProductsList.vue';
+import VideosList from '@/components/VideosList.vue';
+import NewsList from '@/components/NewsList.vue';
 
 export default {
   name: 'Home',
   components: {
     Highlights,
-    ListProducts,
-    ListVideos,
+    ProductsList,
+    VideosList,
+    NewsList,
   },
 };
 </script>
@@ -25,6 +33,8 @@ $breakpoint: 600px;
 
 .div-home{
   width: 100%;
+  height: auto;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: $breakpoint) {

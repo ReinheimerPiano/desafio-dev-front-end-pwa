@@ -1,20 +1,26 @@
 <template>
   <div v-if="!$_model" class="div-container my-5">
+
     <div class="bar-video">
       <span class="title-bar">Vídeos</span>
     </div>
+
     <div class="videos-container">
       <v-card
         v-for="(vd, index) in allVideo"
         :key="index"
         :aria-label="(vd.titulo)"
         :to="vd.url"
-        class="card-video emphasis rounded-lg">
+        class="card-video emphasis rounded-lg"
+      >
+
         <v-hover v-slot="{ hover }">
             <v-img
               :src="vd.imagem"
-              :gradient="hover ? 'to bottom, rgba(0,0,0,.1), rgba(0,0,0,.6)' : ''"
-              class="img-emphasis grey darken-4 img-card rounded-lg align-end">
+              :gradient="hover ? 'to bottom, rgba(0,0,0,.2), rgba(0,0,0,.8)' : ''"
+              class="img-emphasis grey darken-4 img-card rounded-lg align-end"
+            >
+
               <v-fade-transition>
                 <div v-if="hover" >
                   <v-card-subtitle class="play-card pb-0 white--text text-uppercase">
@@ -25,10 +31,13 @@
                   </v-card-title>
                 </div>
               </v-fade-transition>
+
             </v-img>
         </v-hover>
+
       </v-card>
     </div>
+
   </div>
 </template>
 
@@ -36,7 +45,7 @@
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'ListVideos',
+  name: 'VideosList',
   props: {
     value: Boolean,
   },
@@ -60,11 +69,6 @@ export default {
   },
   methods: {
     ...mapGetters(['allVideos']),
-    mouseOver(index) {
-      this.active.splice(index, 0, !this.active[index]);
-      console.log(this.active[index]);
-      // this.active[index] = !this.active[index];
-    },
   },
 };
 </script>
@@ -110,7 +114,6 @@ export default {
 
 .title-card{
   font-size: 1.5rem;
-  font-weight: bold;
   line-height: 1.5rem;
   text-align: initial;
   word-break: keep-all;
@@ -118,7 +121,6 @@ export default {
 
 .play-card{
   font-size: 1rem;
-  font-weight: bold;
   text-align: initial;
   word-break: keep-all;
 }
