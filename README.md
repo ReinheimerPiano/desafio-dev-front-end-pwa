@@ -20,8 +20,7 @@
 <img src="/public/img/screenshot1.png" alt="" data-canonical-src="/public/img/screenshot1.png" width="200" />
 <img src="/public/img/screenshot3.png" alt="" data-canonical-src="/public/img/screenshot3.png" width="400" />
 
-### Vídeo
-<video src="/public/img/Canaltech.webm" alt="" data-canonical-src="/public/img/Canaltech.webm" width="400" />
+### [Vídeo][video]
 
 
 ## Instalação
@@ -65,3 +64,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 Matheus reinheimer Piano – Linkedin [@pianomatheus](https://www.linkedin.com/in/pianomatheus/) – contato@matheuspiano.com
 
 [https://github.com/ReinheimerPiano](https://github.com/ReinheimerPiano)
+
+[video]: /public/img/Canaltech.webm
