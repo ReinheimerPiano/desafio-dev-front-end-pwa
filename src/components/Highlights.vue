@@ -6,7 +6,7 @@
         :key="index"
         :aria-label="(hl.olho + ' - ' + hl.titulo)"
         :to="hl.url"
-        class="card-high-light mr-3 emphasis">
+        class="card-high-light mr-3 emphasis rounded-lg">
         <v-img
           :src="hl.imagem"
           gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.6)"
