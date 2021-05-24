@@ -16,9 +16,9 @@
 ### Extra
 - Uso de LocalStorage
 
-![](/public/img/screenshot1.png | width=500)
+![](/public/img/screenshot1.png | width=50)
 
-![](/public/img/screenshot2.png | width=500)
+![](/public/img/screenshot2.png | width=50)
 
 ## Instalação
 
