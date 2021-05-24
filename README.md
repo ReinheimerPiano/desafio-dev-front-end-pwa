@@ -17,8 +17,8 @@
 - Uso de LocalStorage
 
 <img src="/public/img/screenshot1.png" alt="" data-canonical-src="/public/img/screenshot1.png" width="200" />
+<img src="/public/img/screenshot2.png" alt="" data-canonical-src="/public/img/screenshot2.png" width="200" />
 
-![](/public/img/screenshot2.png | width=50)
 
 ## Instalação
 
