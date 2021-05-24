@@ -1,8 +1,10 @@
 <template>
   <v-app-bar color="primary" app dark v-model="$_model">
-    <div width="auto" class="d-flex align-center pa-1">
-      <icon-canaltech v-model="$_model"/>
-    </div>
+    <router-link to="/">
+      <div width="auto" class="d-flex align-center pa-1">
+        <icon-canaltech v-model="$_model"/>
+      </div>
+    </router-link>
     <v-spacer />
     <v-btn icon>
       <v-icon>mdi-magnify</v-icon>

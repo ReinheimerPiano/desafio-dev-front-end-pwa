@@ -1,6 +1,6 @@
 <template>
   <div v-if="$_model" class="div-menu-list">
-    <div class="container-list-icons d-flex align-center px-2">
+    <div class="container-list-icons d-flex align-center">
     <v-slide-group
       multiple
     >

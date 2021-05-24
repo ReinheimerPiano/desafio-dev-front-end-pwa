@@ -12,7 +12,7 @@ const setLocalStorage = (data) => {
 
 const checkLocalStorage = () => {
   const respJson = window.localStorage.getItem('dataPopulateApp');
-  return respJson.length > 0;
+  return !!respJson;
 };
 
 const returnLocalStorage = () => {

@@ -1,6 +1,7 @@
 <template>
   <v-navigation-drawer
     v-if="!$_model"
+    app
     dark
     permanent
     color='primary'
@@ -8,9 +9,11 @@
     mini-variant-width='60px'
     aria-label="Menu Principal"
     class="navigation-drawer">
-    <v-btn icon x-large class="mt-2">
-      <icon-canaltech v-model="$_model"/>
-    </v-btn>
+    <router-link to="/">
+      <v-btn icon x-large class="mt-2 pa-0">
+        <icon-canaltech v-model="$_model"/>
+      </v-btn>
+    </router-link>
     <v-list dense class="pt-0">
       <v-list-item v-for='(menu, index) in allMenus' :key='index'>
         <v-btn icon large :to="menu.url" class="justify-center">
