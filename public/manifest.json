@@ -1,14 +1,13 @@
 {
+  "short_name": "CT",
   "name": "Canaltech",
-  "short_name": "Canaltech",
+  "start_url": "/",
+  "background_color": "#FFFFFF",
   "display": "standalone",
+  "scope": "/",
+  "theme_color": "#1C1C1C",
   "prefer_related_applications": true,
-  "related_applications": [
-    {
-      "platform": "play",
-      "id": "br.com.canaltech"
-    }
-  ],
+  "description": "Canaltech site",
   "icons": [
     {
       "src": "/android-icon-36x36.png",
@@ -39,12 +38,18 @@
       "sizes": "144x144",
       "type": "image/png",
       "density": "3.0"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/img/screenshot1.png",
+      "type": "image/png",
+      "sizes": "750x1334"
     },
     {
-      "src": "/android-icon-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "density": "4.0"
+      "src": "/img/screenshot2.png",
+      "type": "image/jpg",
+      "sizes": "750x1334"
     }
   ]
 }
