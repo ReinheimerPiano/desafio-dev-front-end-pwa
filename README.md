@@ -25,6 +25,10 @@
 
 ## Instalação
 
+```
+npm install --global yarn
+```
+
 ## Project setup
 ```
 yarn install
